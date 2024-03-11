@@ -37,7 +37,7 @@ app.use(json());
 app.use(cors());
 app.use(cookies());
 
-////routes
+
 app.use("/U", URoutes);
 app.use("/service/provider", SPDashboard);
 

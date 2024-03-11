@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { connect } from "mongoose";
 import dotenv from "dotenv"; 
 
@@ -12,3 +13,19 @@ connect(DB, {
   .catch((error) => {
     console.log("error", error);
   });
+=======
+import { connect } from "mongoose";
+import dotenv from "dotenv"; 
+
+dotenv.config(); 
+const DB = process.env.DATABASE;
+
+connect(DB, {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+})
+  .then(() => console.log("Database connected"))
+  .catch((error) => {
+    console.log("error", error);
+  });
+>>>>>>> master
